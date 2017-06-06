@@ -9,8 +9,7 @@
     "webextensions": true,
   },
 
-  "globals": {
-  },
+  "globals": {},
 
   "rules": {
     "valid-jsdoc": [2, {
@@ -45,10 +44,15 @@
 
     // Enforce one true brace style (opening brace on the same line) and avoid
     // start and end braces on the same line.
-    "brace-style": [2, "1tbs", {"allowSingleLine": true}],
+    "brace-style": [2, "1tbs", {
+      "allowSingleLine": true
+    }],
 
     // No space before always a space after a comma
-    "comma-spacing": [2, {"before": false, "after": true}],
+    "comma-spacing": [2, {
+      "before": false,
+      "after": true
+    }],
 
     // Commas at the end of the line not the start
     "comma-style": 2,
@@ -66,17 +70,25 @@
     "eol-last": 2,
 
     // Require function* name()
-    "generator-star-spacing": [2, {"before": false, "after": true}],
+    "generator-star-spacing": [2, {
+      "before": false,
+      "after": true
+    }],
 
     // Two space indent
     "indent": [2, 2, {
-        "SwitchCase": 1,
-        "CallExpression": {"arguments": "first"}
+      "SwitchCase": 1,
+      "CallExpression": {
+        "arguments": "first"
       }
-    ],
+    }],
 
     // Space after colon not before in property declarations
-    "key-spacing": [2, {"beforeColon": false, "afterColon": true, "mode": "minimum"}],
+    "key-spacing": [2, {
+      "beforeColon": false,
+      "afterColon": true,
+      "mode": "minimum"
+    }],
 
     // Require spaces before and after finally, catch, etc.
     "keyword-spacing": 2,
@@ -181,7 +193,10 @@
     "no-unused-expressions": 2,
 
     // No declaring variables that are never used
-    "no-unused-vars": [2, {"args": "none", "varsIgnorePattern": "^(Cc|Ci|Cr|Cu|EXPORTED_SYMBOLS)$"}],
+    "no-unused-vars": [2, {
+      "args": "none",
+      "varsIgnorePattern": "^(Cc|Ci|Cr|Cu|EXPORTED_SYMBOLS)$"
+    }],
 
     // No using variables before defined
     "no-use-before-define": 2,
@@ -196,13 +211,24 @@
     "space-before-blocks": 2,
 
     // Never use spaces before function parentheses
-    "space-before-function-paren": [2, {"anonymous": "never", "named": "never"}],
+    "space-before-function-paren": [2, {
+      "anonymous": "never",
+      "named": "never"
+    }],
 
     // Require spaces around operators, except for a|0.
-    "space-infix-ops": [2, {"int32Hint": true}],
+    "space-infix-ops": [2, {
+      "int32Hint": true
+    }],
 
     // ++ and -- should not need spacing
-    "space-unary-ops": [1, {"nonwords": false, "words": true, "overrides": {"typeof": false}}],
+    "space-unary-ops": [1, {
+      "nonwords": false,
+      "words": true,
+      "overrides": {
+        "typeof": false
+      }
+    }],
 
     // No comparisons to NaN
     "use-isnan": 2,
@@ -266,7 +292,9 @@
     // Don't require a capital letter for constructors, only check if all new
     // operators are followed by a capital letter. Don't warn when capitalized
     // functions are used without the new operator.
-    "new-cap": [0, {"capIsNew": false}],
+    "new-cap": [0, {
+      "capIsNew": false
+    }],
 
     // Allow use of bitwise operators.
     "no-bitwise": 0,
@@ -321,13 +349,17 @@
     "no-inline-comments": 0,
 
     // Disallow use of labels for anything other then loops and switches.
-    "no-labels": [2, { "allowLoop": true }],
+    "no-labels": [2, {
+      "allowLoop": true
+    }],
 
     // Disallow use of multiline strings (use template strings instead).
     "no-multi-str": 1,
 
     // Disallow multiple empty lines.
-    "no-multiple-empty-lines": [1, {"max": 2}],
+    "no-multiple-empty-lines": [1, {
+      "max": 2
+    }],
 
     // Allow reassignment of function parameters.
     "no-param-reassign": 0,
@@ -412,13 +444,19 @@
     "quote-props": 0,
 
     // Double quotes should be used.
-    "quotes": [1, "double", {"avoidEscape": true, "allowTemplateLiterals": true}],
+    "quotes": [1, "double", {
+      "avoidEscape": true,
+      "allowTemplateLiterals": true
+    }],
 
     // Require use of the second argument for parseInt().
     "radix": 2,
 
     // Enforce spacing after semicolons.
-    "semi-spacing": [2, {"before": false, "after": true}],
+    "semi-spacing": [2, {
+      "before": false,
+      "after": true
+    }],
 
     // Don't require to sort variables within the same declaration block.
     // Anyway, one-var is disabled.
@@ -428,7 +466,7 @@
     "spaced-comment": [2, "always"],
 
     // Require "use strict" to be defined globally in the script.
-    "strict": [2, "global"],
+    //"strict": [2, "global"],
 
     // Allow vars to be declared anywhere in the scope.
     "vars-on-top": 0,
