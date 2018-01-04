@@ -1,3 +1,3 @@
 require("babel-core/register")({
-  presets: ["es2017"],
+  presets: ["env"],
 });
