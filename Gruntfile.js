@@ -62,7 +62,7 @@ module.exports = function(grunt) {
         options: {
           babelrc: false,
           comments: false,
-          presets: ["babili"],
+          presets: ["minify"],
           sourceMap: true,
         },
         files: {
